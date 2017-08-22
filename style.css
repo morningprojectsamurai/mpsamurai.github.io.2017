@@ -56,3 +56,10 @@ body{text-align: center;}
             color: black;
             text-shadow: 0 0 #fff;
         }
+
+
+@media (min-width: 768px)
+bootstrap.css:1592
+.container {
+    width: １００％;
+}
