@@ -7,34 +7,101 @@
 		<meta charset="UTF-8"><!--　文字エンコーディングの種類を指定します。今回は　-->
 		<meta name="description" content="このサイトはMPSのオフィシャルページとなります。団体プロフィール・活動内容・イベント次回予告を載せています。"><!--　GoogleやYahooなどの検索結果に表示される内容です。　-->
 		<meta name="keywords" content="MPS,morningprojectsamurai"><!--　検索ワードに認識されたいキーワードを入れます　-->
+
+		<link rel="stylesheet" href="jquery.bxslider/jquery.bxslider.css">
+		<script
+		  src="https://code.jquery.com/jquery-2.2.4.min.js"
+		  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		  crossorigin="anonymous"></script>
+		<script src="jquery.bxslider/jquery.bxSlider.min.js"></script>
+		<script>
+		$(function(){
+			$('.bxslider').bxSlider({
+				auto: true,
+				slideWidth: 640,
+				speed:1500,
+				slideMargin:10,
+				maxSlides: 4,
+				minSlides:4,
+				adaptiveHeight:true,
+				randomStart:false,
+				hideControlOnEnd: true,
+
+				//adaptiveHeight:true,(スライダーの高さの調節)
+				//video:true,(スライダーに含まれている video をレスポンシブにする場合は 'true' を指定します。またその際は別途［jquery.fitvids.js］を読み込む必要があります。)
+			})});
+		</script>
+
 		<link rel="stylesheet" href="style.css"><!--　CSSを設置　-->
-		<link rel="stylesheet" href="bootstrap.css"><!--　CSSを設置　-->
+
 
 	</head>
-	
+
 	<body><!--　ここにページの内容を記述します　-->
-	<img src="images/mps_white.png" alt="MPS写真" width="200" height="100%">
-	<h2>まるまるまる</h2><!--Be an awesome leader, be a gread engineer!!-->
-		
-	<main class="container">
-	<nav class="container">
-	    <div class="row">
-		<ul class="menu">
-		    <li><a href="#/about">活動内容</a></li>
-		    <li><a href="#/organization">実績</a></li>
-		    <li><a href="#/project">アクセス</a></li>
-		    <li><a href="#/photo">コワーキング</a></li>
-		</ul>
-	    </div>
+	<img class="logo" src="images/mps_white.png" alt="MPS写真" width="200" height="100%">		
+	<nav>
+			<ul id="menu">
+			    <li><a href="#/about">活動内容</a></li>
+			    <li><a href="#/organization">実績</a></li>
+			    <li><a href="#/project">アクセス</a></li>
+			    <li><a href="#/photo">コワーキング</a></li>
+			    <li><a href="#/photo">コワーキング</a></li>
+			</ul>
 	</nav>
-	<div class="row">
-	<div class="left">aaaa</div>
-	<div class="right">bbbbb</div>
+	<div class="caption">
+		<div class="left">
+		<h3>新着スライド</h3>
+			<ul class="bxslider">
+			  <li><img src="images/image1.png" /></li>
+			  <li><img src="images/image2.png" /></li>
+			  <li><img src="images/image3.png" /></li>
+			  <li><img src="images/image4.png" /></li>
+			  <li><img src="images/image5.png" /></li>
+			  <li><img src="images/image6.png" /></li>
+			</ul>
+		</div>
+		<div class="right">
+			<div class="qiita">
+				<h3>Deep Learning のための Multi Layer Perceptron </h3>
+				<h2>Qiita最新記事</h2>
+				<p>(数学的基礎から学ぶ Deep Learning with Python; MPS Yokohama Deep Learning Series)</p>
+			</div>
+		</div>
 	</div>
-	<p>Morning Project Samurai (MPS) は、メンバ一人一人が「主体的」に「世の中の役に立つソフトウェア開発プロジェクト」を提案し、<br/>
-	「リーダーとなる機会を持つことのできる環境」を作ります。</p>
+	<div class="caption">
+		<div class="left">
+			<h3>新着動画</h3>
+			<ul class="bxslider">
+			  <li><img src="images/image7.png" /></li>
+			  <li><img src="images/image8.png" /></li>
+			  <li><img src="images/image2.png" /></li>
+			  <li><img src="images/image1.png" /></li>
+ 			  <li><img src="images/image3.png" /></li>
+			  <li><img src="images/image4.png" /></li>
+ 			  <li><img src="images/image5.png" /></li>
+			</ul>
+		</div>
+		<div class="right">
+			<div class="github">
+				<h2>Github最新記事</h2>
+				<h3>作者：mpsamurai/qiita-analyzer</h3>
+				<h3>題：qiita-analyzerQiita の記事を分析するモジュール</h3>
+				<p>コード</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="catchcopy">
+		Morning Project Samurai (MPS) は、メンバ一人一人が「主体的」に「世の中の役に立つソフトウェア開発プロジェクト」を提案し、<br/>
+		「リーダーとなる機会を持つことのできる環境」を作ります。
+	</div>
 	<h2>MPSリンク</h2>
 	<a href="https://mpsamurai.org/#/about"><p>ここをクリックしてください</p></a>
+
+
+
+
+
 	</main>
 	</body>
 </html>

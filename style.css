@@ -1,4 +1,73 @@
-img{width:200px;
+img.logo{width:150px;
 	height:100%;}
 a{color:red;}
 body{text-align: center;}
+
+.catchcopy{width:100%;}
+
+nav{width:100%;}
+
+li img{height: 200px;}
+
+
+#menu {
+  width:100%;
+  padding:0;
+  margin:0;
+  list-style-type: none;
+}
+#menu li {
+  width:20%;
+  float:left;
+  padding:0;
+  margin:0;
+  text-align:center;
+}
+#menu li a {
+  width:auto;
+  color:#fff;
+  font-size:12px;
+  font-weight:bold;
+  padding:10px 0;
+  text-decoration:none;
+  display:block;
+  background:#666;
+}
+#menu li a:hover {
+  background:#555;
+
+}
+
+.caption{
+	margin-left: 2%;
+  margin-right: 2%;
+}
+.caption:after {
+  display: block;
+  clear: both;
+  content: "";
+
+}
+
+
+.left{
+	float: left;
+  width: 60%;
+  background-color: #E6E6FA;
+    margin: 1em 0;
+    padding: 1em;
+}
+.right{
+	float: right;
+  width: 25%;
+  background-color: #FFB6C1;
+    margin: 2em 0;
+    padding: 2em;
+}
+
+.bxslider li img{width: 100%;}
+.bx-wrapper {margin-bottom: 30px;}
+
+
+.qiita{}
+.github{}
