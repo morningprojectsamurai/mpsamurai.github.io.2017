@@ -9,14 +9,7 @@ b{font-size: 20px;
   font-weight: 10px;}
 
 
-hr{margin:0 0 0 0px;
-}
 
-hr.border{
-  height: 20px;
-  background-color: #8A084B;
-  border:0;
-}
 
 
 nav{width:100%;}
@@ -45,7 +38,7 @@ li img{height: 200px;}
   padding:5px 0;
   text-decoration:none;
   display:block;
-  background:#B40431;
+  background:#0e0e0e;
 }
 #menu li a:hover {
   background:#555;
@@ -65,10 +58,10 @@ img.logo{
 
 .sub_menu {
   float: right;
-  width:85%;
-  padding:0px;
-  margin:0;
+  width:88%;
   list-style-type: none;
+  padding:0;
+  margin:0;
 }
 
 
@@ -79,7 +72,7 @@ img.logo{
   margin:0;
   text-align:center;
 }
-.sub_menu li.freeword{ width:29%;
+.sub_menu li.freeword{ width:26%;
   height: 100%;
   padding: 5px;
   font-size: 10px;
@@ -94,21 +87,25 @@ img.logo{
   padding:15px 0;
   text-decoration:none;
   display:block;
-  background:#F6CEF5;
+  background:#fff;
 }
 .sub_menu li a:hover {
-  background:#BE81F7;
+  background:#eee;
 }
-.sub_menu.green{
-  background-color: #0B3861;}
-.sub_menu.blue{background-color: #610B21;}
-.sub_menu.blue p{color:#fff;}
+
+.sub_menu.blue .freeword{border: 4px solid #AEB404;
+    border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+}
+.sub_menu.green .freeword{border: 4px solid #82636b;
+    border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+}
+.sub_menu.blue p{color:#000;}
 
 .sub_menu b{font-size: 15px;}
 
 
 .caption{
-	margin-left: 2%;
+	padding-left: 2%;
 }
 .caption:after {
   display: block;
@@ -284,6 +281,12 @@ padding: 0;
   transform: rotateY(360deg);
 }
 
+
+
+.main_photo img{
+  width: 100%;
+  height: 450px;
+}
 
 .qiita{}
 .github{}
